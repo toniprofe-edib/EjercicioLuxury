@@ -1,2 +1,34 @@
 /* CSS GRID */
 /* **************************************************************** */
+body{
+    background-image: url(../img/catedralPalma.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+}
+
+header, footer{
+    height: 10vh;
+}
+main{
+    height: 80vh;
+}
+
+header,main,footer{
+    display: grid;
+    grid-template-columns: 1fr 1000px 150px;
+    gap: 20px;
+}
+header .logo, section.texto {
+    grid-column: 2/3;
+}
+section.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu, section.redes {
+    grid-column: 3/4;
+}
